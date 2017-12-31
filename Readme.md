@@ -14,8 +14,8 @@ tsv.
 ### Running the scripts
 
 ```
+ # Use any argument you would wish to pass to mongoexport, except --type which is not supported and it doesn't make any sense to use it, and --fieldFile, development pending.
  ./mongoexportTSV.sh --db mydb --collection=articles --out ./urls.json --fields link,summary,title
- # Please note that --type is not supported by the file and it doesn't make any sense to use it
 ```
 
 ## TODO:
