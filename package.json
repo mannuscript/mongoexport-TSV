@@ -1,0 +1,27 @@
+{
+  "name": "mongoexport-tsv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "convert.js",
+  "dependencies": {
+    "event-stream": "^3.3.4",
+    "through": "^2.3.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mannu1200/mongoexport-TSV.git"
+  },
+  "keywords": [
+    "mongoexport"
+  ],
+  "author": "Mannu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mannu1200/mongoexport-TSV/issues"
+  },
+  "homepage": "https://github.com/mannu1200/mongoexport-TSV#readme"
+}
