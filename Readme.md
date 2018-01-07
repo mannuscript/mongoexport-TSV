@@ -20,6 +20,3 @@ tsv.
 
 ## TODO:
  1. Support --fieldFile 
- 
-## Issues:
- 1. Please create an issues if you find any fault.
