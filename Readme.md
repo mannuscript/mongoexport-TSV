@@ -12,10 +12,10 @@ tsv.
  1. npm install
 
 ### Running the scripts
-
-```
- # Use any argument you wish to pass to mongoexport, except --type (doesn't make any sense) and --fieldFile which is not supported yet.
- # NOTE: White spaces are not allowed in the values e.g. '{$where:" this.text.length>1000"}' (having space in query) will not work. 
+NOTE:
+ 1. Use any argument you wish to pass to mongoexport, except --type (doesn't make any sense) and --fieldFile which is not supported yet.
+ 2. White spaces are not allowed in the values e.g. '{$where:" this.text.length>1000"}' (having space in query) will not work. 
+ ```
  ./mongoexportTSV.sh --db mydb --collection=articles --out ./urls.json --fields link,summary,title --query '{$where:"this.text.length>1000"}'
 ```
 
