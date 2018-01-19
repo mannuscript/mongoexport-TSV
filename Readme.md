@@ -14,9 +14,12 @@ tsv.
 ### Running the scripts
 
 ```
- # Use any argument you would wish to pass to mongoexport, except --type which is not supported and it doesn't make any sense to use it, and --fieldFile, development pending.
- ./mongoexportTSV.sh --db mydb --collection=articles --out ./urls.json --fields link,summary,title
+ # Use any argument you wish to pass to mongoexport, except --type (doesn't make any sense) and --fieldFile which is not supported yet.
+ # NOTE: White spaces are not allowed in the values e.g. '{$where:" this.text.length>1000"}' (having space in query) will not work. 
+ ./mongoexportTSV.sh --db mydb --collection=articles --out ./urls.json --fields link,summary,title --query '{$where:"this.text.length>1000"}'
 ```
 
 ## TODO:
  1. Support --fieldFile 
+ 2. Support white spaces in the query.
+ 3. Add test Script
