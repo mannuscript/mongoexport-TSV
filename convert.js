@@ -25,7 +25,7 @@ var newLineChar = "\n";
 			dataStr = "";
 			columns.forEach(function(col){
 				//add tab, replace the new line and tab characters with spaces and encode the string with double quotes
-				dataStr +=  (dataJson[col] ? dataJson[col].replace(/[\r\n\t]+/g, " ") : " ") + "\t";
+				dataStr +=  (dataJson[col] ? dataJson[col].toString().replace(/[\r\n\t]+/g, " ") : " ") + "\t";
 			});
 			dataStr += newLineChar;	
 			
